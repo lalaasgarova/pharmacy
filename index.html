@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign up/Sign in</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/sourcesanspro-font.css">
+	<!-- Main Style Css -->
+	    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/style2.css"/>
+
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="css/util.css"/>
+
+</head>
+
+<body class="form-v8">
+	<div class="page-content">
+		<div class="form-v8-content">
+			<div class="form-right">
+				<div class="tab">
+					<div class="tab-inner">
+						<button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">Sign Up</button>
+					</div>
+					<div class="tab-inner">
+						<button class="tablinks" onclick="openCity(event, 'sign-in')">Sign In</button>
+					</div>
+				</div>
+				<form class="form-detail" action="#" method="post">
+					<div class="tabcontent" id="sign-up">
+						<div class="form-row">
+							<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
+								<input class="input100" type="text" name="username" placeholder="Username">
+								<span class="focus-input100"></span>
+						</div>
+						</div>
+					
+					<div class="form-row">
+							<div class="wrap-input100 validate-input" data-validate="E-mail is required">
+								<input class="input100" type="e-mail" name="pass" placeholder="E-mail">
+								<span class="focus-input100"></span>
+							</div>
+					</div>
+					<div class="form-row">
+							<div class="wrap-input100 validate-input" data-validate="Password is required">
+								<input class="input100" type="password" name="pass" placeholder="Password">
+								<span class="focus-input100"></span>
+							</div>
+					</div>
+					<div class="form-row">
+							<div class="wrap-input100 validate-input" data-validate="Password is required">
+							<input class="input100" type="password" name="pass" placeholder="Confirm password">
+							<span class="focus-input100"></span>
+							</div>
+					</div>
+					<div class="form-row">
+							<div class="input-group" style="margin-top: 20px;">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="country">
+                                    <option disabled="disabled" selected="selected">Country</option>
+                                    <option>Azerbaijan</option>
+                                    <option>USA</option>
+                                    <option>UK</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                    </div>
+				
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<input type="button" value="Sign up" onclick="window.location.href='home.html';" style="color:white;" />
+<!-- 							<button onclick="window.location.href = '/home.html'" class="login100-form-btn">
+								Sign up
+							</button> -->
+						</div>
+					</div>
+					</div>
+				
+				</form>
+				</div>
+				<form class="form-detail" action="#" method="post">
+					<div class="tabcontent" id="sign-in">
+						<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="text-right p-t-8 p-b-31">
+						<a href="#">
+							Forgot password?
+						</a>
+					</div>
+						
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<input type="button" value="Sign in" onclick="window.location.href='home.html';" style="color:white;" />
+						</div>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
