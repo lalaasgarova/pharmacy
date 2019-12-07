@@ -1,2 +1,2 @@
-# pharmacy
+# Pharmacy
 Pharmacy Website
