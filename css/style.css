@@ -56,11 +56,10 @@
 }
 
 #quiz button {
-  float: left;
   margin: 8px 0px 0px 8px;
   padding: 4px 8px;
-  background: #9ACFCC;
-  color: #00403C;
+  background: #000;
+  color: #fff;
   font-size: 14px;
   outline: none;
 }
@@ -72,13 +71,12 @@
 
 #quiz button:disabled {
   opacity: 0.5;
-  background: #9ACFCC;
-  color: #00403C;
+  background: #000;
+  color: #fff;
 }
 
 #question {
   padding: 20px;
-  background: #FAFAFA;
   text-align: center;
 }
 
@@ -96,8 +94,8 @@
   display: inline-block;
   margin: 4px;
   padding: 8px;
-  background: #FAE3BB;
-  color: #4C3000;
+  background: #0C479D;
+  color: #ffff;
   width: calc(50% - 8px);
   min-width: 50px;
 }

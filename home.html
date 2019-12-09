@@ -15,6 +15,8 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+        <link href="./scss/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -27,23 +29,6 @@
 
     <!-- Header Area Start -->
     <header class="header-area">
-        <!-- Top Header Area Start -->
-        <div class="top-header-area">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-5">
-                        <div class="top-header-content">
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="top-header-content text-right">
-                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 24/7 <span class="mx-2"></span> | <span class="mx-2"></span> <i class="fa fa-phone" aria-hidden="true"></i> Call us: (+994)70-800-80-75</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Top Header Area End -->
 
         <!-- Main Header Start -->
         <div class="main-header-area">
@@ -72,7 +57,7 @@
                                 <ul id="nav">
                                     <li><a href="#questions">Take a quiz</a></li>
                                     <li><a href="./service.html">Q/A portal</a></li>
-                                    <li><a href="./about.html">Statistics</a></li>
+                                    <li><a href="./statistics.html">Statistics</a></li>
                                 </ul>
 
                                 <!-- Cart Icon -->
@@ -141,10 +126,12 @@
         <div id="quiz">
             <h1 id="quiz-name"></h1>
            <!--  <div id='quiz-buttons'> -->
-            <button id="submit-button">Submit Answers</button>
-            <button id="next-question-button">Next Question</button>
-            <button id="prev-question-button">Previous</button>
+            <div>
+                <button id="submit-button">Submit Answers</button>
+                <button id="next-question-button">Next Question</button>
+                <button id="prev-question-button">Previous</button>
             <!-- </div> -->
+            </div>
             <div id="quiz-results">
                 <p id="quiz-results-message"></p>
                 <p id="quiz-results-score"></p>
